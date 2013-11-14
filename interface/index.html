@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>Interface pour l’application webspider</title>
+		<link rel="stylesheet" href="styles-ecrans.css" media="screen" /> <!-- Styles pour écran d'ordinateur -->
+		<link rel="stylesheet" href="styles-mobiles.css" media="handheld" /> <!-- Styles adaptés pour petit écran -->
+		<script src="scraper.js"></script>
+		<script type="text/javascript" src="http://127.0.0.1:3000/socket.io/socket.io.js"></script> <!-- j'inclue le fichier JavaScript provenant de /socket.io/socket.io.js -->
+	</head>
+  
+  	<body>
+		<header>
+				<h1>WEBSPIDER</h1>
+				
+				<!--coté client > insertion du lien de la librairie socket.io -->
+				<script type="text/javascript" src="/socket.io/socket.io.js"></script> <!-- il faut écouter directement sur la route de base et non sur le fichier  -->
+				
+				<!--coté client > connection au serveur -->
+				<script type="text/javascript">
+					var socket = io.connect('http://127.0.0.1:3000');
+					<!--évènement faitUneAlerte du client au serveur-->
+					socket.on('faitUneAlerte', function () {
+						alert('Je fais une alerte car on m\'a appelé !');
+					});
+					socket.on('faitUneAlerte2', function (phrase) {
+						alert(phrase);
+					});
+				</script>
+		</header>
+
+		<div class="urlSource">
+			<label class="resultat">Recherche</label>
+
+			<div class="contenuUrlSource">
+				<input class="monURL" type="text" name="monURL" size="60" placeholder="@monURL">
+				<input class="rechercher" type="button" value="rechercher">
+			</div>
+		
+		</div>
+		
+		<div class="urlCrawled">
+				<label class="resultat">Résultat</label>
+				
+				<div class="contenuUrlCrawled">
+					<fieldset class="fieldset1"> 
+						URL 1 CRAWLED
+					</fieldset>
+					  
+					<fieldset class="fieldset2"> 
+						URL 2 CRAWLED
+					</fieldset>
+					
+					<fieldset class="fieldset1"> 
+						URL 3 CRAWLED
+					</fieldset>
+					  
+					<fieldset class="fieldset2"> 
+						URL 4 CRAWLED
+					</fieldset>
+					
+					<fieldset class="fieldset1"> 
+						URL 5 CRAWLED
+					</fieldset>
+					  
+					<fieldset class="fieldset2"> 
+						URL 6 CRAWLED
+					</fieldset>
+					
+				</div>
+		</div>
+	
+		<footer>
+		
+		</footer>
+	
+	</body>
+	
+</html>

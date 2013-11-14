@@ -1,0 +1,203 @@
+@media screen and (min-width: 800px) and (orientation:landscape) {
+
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	
+	header {
+		position: fixed;
+		box-sizing: border-box;
+		color: white;
+		width: 100%;
+		padding-top:0px;
+		padding-bottom:28px;
+		padding-right:0px;
+		padding-left:0px;
+		background-color: #A9ADC7;		
+		-moz-opacity:0.75;/* opacité du background color*/
+		opacity: 0.75;
+		font-size : 120%; 
+		height: 48px;
+		/*fond*/
+		background-image:url(spider.jpg);
+		background-repeat:repeat;
+	}
+	
+	header h1{
+		text-align: center;
+		text-shadow: 2px 2px 7px rgba(101, 113, 94, 0.75);
+		color: #ECE8E8;
+		font-size: 50px;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	.urlSource{
+		top: 48px;
+		left: 0px;	
+		width: 46%;
+		bottom: 56px;	
+		position:absolute;
+		background-color: #FFEFD5;
+		position:fixed; /*position fixe */
+		/*fond*/
+		background-color: #A9ADC7;		
+		-moz-opacity:0.75;/* opacité du background color*/
+		opacity: 0.75;
+		background-image:url(spider_blue.jpg);
+		background-repeat:repeat;
+	}
+	
+	.contenuUrlSource{
+		top: 75px;
+		left: 10px;	
+		width: 44.1%;
+		bottom: 83px;	
+		position:absolute;
+		background-color: #8A2BE2;
+		position:fixed; /*position fixe */
+		/*fond*/
+		background-image:url(spider.jpg);
+		background-repeat:repeat;
+	}
+	
+	.monURL, .rechercher  {
+	 		font-family : Comic Sans Ms;
+	}
+	 
+	.monURL {
+		font-size : 120%; 
+		width: 598px; 
+		height: 28px;
+		top: 2px;   
+		left: 6px;
+	}
+	
+	.rechercher {
+		font-family : Comic Sans Ms;
+		position: absolute; 
+		top: 50px;   
+		left: 208px;
+		-moz-box-shadow:inset 1px 0px 20px -6px #483D8B;
+		-webkit-box-shadow:inset 1px 0px 20px -6px #483D8B;
+		box-shadow:inset 1px 0px 20px -6px #483D8B; /* ombre de la boite*/
+		background-color:#483D8B; /* couleur de fond*/
+		-webkit-border-top-left-radius:30px; /*défini les bordures sous différents navigateurs */
+		-moz-border-radius-topleft:20px;
+		border-top-left-radius:20px;
+		-webkit-border-top-right-radius:20px;
+		-moz-border-radius-topright:20px;
+		border-top-right-radius:20px;
+		-webkit-border-bottom-right-radius:20px;
+		-moz-border-radius-bottomright:20px;
+		border-bottom-right-radius:20px;
+		-webkit-border-bottom-left-radius:20px;
+		-moz-border-radius-bottomleft:20px;
+		border-bottom-left-radius:20px;
+		text-indent:-1.31px; /*indentation du text */
+		border:1px solid #3b2807; /*défini les bordure */
+		display:inline-block;
+		color:#F5FFFA;
+		 /*défini les différents style du texte */
+		font-size:20px;
+		font-weight:bold;
+		font-style:normal;
+		height:34px;
+		line-height:32px; /* positionnement du texte dans la boite*/
+		width:115px; /* taille*/
+		text-decoration:none; /* enleve le souligné*/
+		text-align:center; /* aligne le texte*/
+		text-shadow:2px 1px 20px #00FFFF; /* défini l'ombre du text*/
+	}
+	
+	.rechercher:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8f691d), color-stop(1, #ab8a50) ); /*défini l'annimation sous différents navigateurs */
+		background:-moz-linear-gradient( center top, #8f691d 5%, #ab8a50 100% );
+		background-color:#8f691d;
+	}
+	
+	.rechercher:active{
+		 color: #000;
+		 background: #444;
+		 background: -webkit-linear-gradient( #555, #2C2C2C);
+		 background:    -moz-linear-gradient( #555, #2C2C2C);
+		 background:     -ms-linear-gradient( #555, #2C2C2C);
+		 background:      -o-linear-gradient( #555, #2C2C2C);
+		 background:         linear-gradient( #555, #2C2C2C);
+		 box-shadow: 1px 1px 10px black inset, 
+					 0 1px 0 rgba( 255, 255, 255, 0.4);
+	}
+	
+	.urlCrawled {
+		position:fixed; /*position fixe */
+		left: 45.5%;
+		/*position:absolute; ça me permet d'enlever le scroll de la page*/ 
+		top: 7.4%;
+		width: 54.5%;
+		/*background-color: #87CEFA;*/
+		/*fond*/
+		background-color: #A9ADC7;		
+		-moz-opacity:0.80;/* opacité du background color*/
+		opacity: 0.80;
+		background-image:url(spider_blue_dark.jpg);
+		background-repeat:repeat;
+	}
+	
+	.contenuUrlCrawled{		
+		overflow-y: scroll; /*Permet d'afficher en scroll en vertical*/ 
+		height: 600px; /*pour lui donner une hauteur maximum sinon il ne trouve pas */
+		/*fond*/
+		background-image:url(spider_blue_dark.jpg);
+		background-repeat:repeat;
+	}
+	
+	.resultat{
+		font-family : "Blippo, fantasy" ;
+		font-style: oblique;
+		font-size : 150%;
+		margin-left: 35%;
+		font-weight: 900;
+		color: #CD853F;
+	}
+	
+	.fieldset1{
+		background-color: #B0C4DE;
+		border: 2px solid black;
+		border-radius: 10px;
+		text-align: center;
+		/*fond*/
+		-moz-opacity:0.75;/* opacité du background color*/
+		opacity: 0.75;
+	}
+	
+	.fieldset2{
+		background-color: #D8BFD8;
+		border-radius: 10px;
+		border: 2px solid black;
+		text-align: center;
+		/*fond*/
+		-moz-opacity:0.80;/* opacité du background color*/
+		opacity: 0.80;
+	}
+	
+
+	footer {
+		position:fixed; /*position fixe */
+		font-family : Comic Sans Ms;
+		bottom: 0;
+		left : 0;
+		height: 7%; 
+		width: 44.7%;		
+		padding: .3em;
+		color: #F5F5F5;
+		background-color: #A9ADC7;
+		-moz-opacity:0.75;/* opacité du background color*/
+		opacity: 0.75; /* opacité du background color*/
+		text-shadow:2px 1px 20px #008080; /* défini l'ombre du text*/
+		font-size : 120%; 
+		background-image:url(spider.jpg);
+		background-repeat:repeat;
+	}
+
+}

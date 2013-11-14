@@ -1,0 +1,26 @@
+{
+  "name": "webspider",
+  "version": "0.0.0",
+  "description": "Mon webspider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "async": "~0.2.9",
+    "lodash": "~2.2.1",
+    "express": "~3.4.4",
+    "request": "~2.27.0",
+    "winston": "~0.7.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alan-lb/webspider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alan-lb/webspider/issues"
+  }
+}
